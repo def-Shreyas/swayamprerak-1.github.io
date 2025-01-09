@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex: 1;
+}
+
+.youtube {
+  width: 30rem;
+  margin: 0 auto;
+  padding-top: 10rem;
+  position: static;
+  top: 4rem;
+}
+
+.youtube img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.youtube p {
+  color: red;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.youtube span {
+  color: #444;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .youtube {
+    padding-top: 2rem;
+  }
+
+  .youtube {
+    width: 20rem;
+    margin: 0 auto;
+    padding-top: 3rem;
+    position: static;
+    top: 4rem;
+  }
+
+  .youtube img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .youtube p{
+    font-size: 1.4rem;
+    padding-top: 1rem;
+  }
+}

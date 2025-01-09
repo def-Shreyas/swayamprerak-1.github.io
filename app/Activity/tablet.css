@@ -1,0 +1,30 @@
+/* Tablet (600px to 768px width) */
+@media screen and (max-width: 768px) and (min-width: 600px) {
+    .activity-container {
+        flex-direction: column;
+        height: auto;
+        padding: 1.5rem; /* Adjust padding to give more space */
+    }
+
+    .activity-img-container {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid black;
+        margin-bottom: 1rem;
+    }
+
+    .activity-img {
+        width: 13rem; /* Adjust image width for tablets */
+        height: 10rem; /* Adjust image height for tablets */
+    }
+
+    .activity-name {
+        font-size: 1.3rem; /* Adjust font size for activity name */
+    }
+
+    .activity-des {
+        width: 90%;
+        font-size: 1.1rem; /* Adjust description font size */
+        line-height: 1.6;
+    }
+}

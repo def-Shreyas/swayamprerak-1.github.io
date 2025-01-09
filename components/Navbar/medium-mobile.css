@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 375px) {
+    .navbar {
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.2rem;
+        background-color:#041536;
+    }
+
+    .leftNav {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .laptopNav {
+        display: none;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .txt {
+        display: none;
+    }
+
+    .rightNav {
+        width: 0px;
+        height: 0px;
+    }
+
+    .menubar {
+        width: 15rem;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.439);
+        position: fixed;
+        top: 0;
+        right: -15rem;
+        padding: 3rem;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+    }
+
+    .cross {
+        width: 25px;
+        height: 25px;
+        top: 10%;
+        right: 8%;
+        position: absolute;
+    }
+
+    .menubar-items {
+        font-family: arial;
+        font-size: 1.4rem;
+        color: rgb(0, 0, 0);
+        margin: 0.8rem;
+    }
+
+    .menubar-items a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+}
+
+/* @media screen and (min-width: 320px) {
+    .menubar {
+        width: 9rem;
+        padding-top: 3rem;
+        padding-left: 1rem;
+        right: -9rem;
+    }
+
+    .menubar-items {
+        width: 9rem;
+        font-family: Arial, sans-serif;
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+} */
+
+/* @media screen and (min-width: 375px) {
+    .menubar {
+        width: 12rem;
+        padding-top: 3rem;
+        padding-left: 2rem;
+        right: -12rem;
+    }
+
+    .menubar-items {
+        width: 12rem;
+        font-family: Arial, sans-serif;
+        font-size: 1.3rem;
+    }
+
+    .cross {
+        width: 25px;
+        height: 25px;
+        top: 10%;
+        right: 8%;
+    }
+} */

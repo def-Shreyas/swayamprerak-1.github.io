@@ -1,0 +1,130 @@
+/* slider.css */
+body, html {
+    background-color: #ffecc8;
+}
+
+/* Adds glowing animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff7e5f, 0 0 10px #ff7e5f, 0 0 20px #feb47b;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #feb47b, 0 0 20px #ff7e5f, 0 0 30px #ff7e5f;
+    }
+}
+
+.slider-container {
+    max-width: 900px;
+    height:40rem;
+    margin: 0 auto;
+    position: relative;
+    top: 8rem;
+    padding: 20px;
+}
+
+.slider-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.slider-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .heading {
+        font-size: 50px;
+        /* Slightly smaller heading size for larger screens */
+        letter-spacing: 4px;
+        /* Adjust letter spacing for balance */
+    }
+
+    .slider-container {
+        max-width: 1200px;
+        /* Increase max width for large laptops */
+        padding: 40px;
+        /* More padding for a spacious look */
+    }
+
+    .slider-image {
+        border-radius: 15px;
+        /* Slightly more rounded corners */
+    }
+}
+
+/* For Small Laptops (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .heading {
+        font-size: 45px;
+        /* Slightly smaller font for small laptops */
+        letter-spacing: 3px;
+        /* Adjust letter spacing for smaller screens */
+    }
+
+    .slider-container {
+        max-width: 900px;
+        /* Adjust slider container for smaller screens */
+        padding: 20px;
+        /* Less padding for small laptops */
+    }
+
+    .slider-image {
+        border-radius: 12px;
+        /* Slightly rounded corners */
+    }
+}
+
+/* For Tablets (min-width: 600px and max-width: 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+    .heading {
+        font-size: 40px;
+        /* Smaller font size for tablets */
+        letter-spacing: 2px;
+        /* Adjust spacing for tablet screens */
+    }
+
+    .slider-container {
+        max-width: 100%;
+        /* Full width for better mobile experience */
+        padding: 15px;
+        /* Less padding */
+    }
+
+    .slider-image {
+        border-radius: 10px;
+        /* More rounded corners for tablets */
+    }
+}
+
+/* For Large Mobiles (min-width: 480px and max-width: 600px) */
+@media (min-width: 481px) and (max-width: 600px) {
+    .slider-container {
+        padding: 10px;
+        /* Even less padding for large mobiles */
+    }
+
+    .slider-image {
+        width: 26rem;
+        height: 26rem;
+        border-radius: 8px;
+    }
+}
+
+/* For Small Mobiles (max-width: 480px) */
+@media (max-width: 480px) {
+    .slider-container {
+        height:30rem;
+        padding: 5px;
+    }
+
+    .slider-image {
+        width: 24rem;
+        height: 24rem;
+        border-radius: 5px;
+        /* Smallest rounded corners for small mobiles */
+    }
+}

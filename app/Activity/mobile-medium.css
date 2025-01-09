@@ -1,0 +1,31 @@
+/* Medium Mobile (375px to 425px width) */
+@media screen and (max-width: 425px) and (min-width: 375px) {
+    .activity-container {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem; /* Adjust padding for medium mobile */
+    }
+
+    .activity-img-container {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid black;
+        margin-bottom: 1rem;
+    }
+
+    .activity-img {
+        width: 10rem; /* Adjust image size for medium mobile */
+        height: 8rem;  /* Adjust image height for medium mobile */
+    }
+
+    .activity-name {
+        font-size: 1rem; /* Smaller font size for activity name */
+        margin-top: 0.5rem;
+    }
+
+    .activity-des {
+        width: 90%;
+        font-size: 0.9rem; /* Adjust description font size */
+        line-height: 1.4;
+    }
+}

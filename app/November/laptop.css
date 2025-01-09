@@ -1,0 +1,84 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container {
+  width: 50rem;
+  max-width: 90%;
+  height: auto;
+  margin: 2rem auto;
+  position: relative;
+  padding: 20px;
+}
+
+.slider-container p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 0rem 0 1rem 0;
+}
+
+.slider-container .location {
+  padding: 1rem 0 0 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.slider-container span {
+  font-weight: bold;
+  color: #1f56c4;
+}
+
+@media (max-width: 768px) {
+  /* Tablet */
+  .slider-container {
+    width: 80%;
+    height: auto;
+    margin-top: 1.5rem;
+    padding: 15px;
+  }
+  .slider-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile */
+  .slider-container {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .slider-container img {
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+    border-radius: 8px;
+  }
+
+  .slider-container p {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 0rem 0 1rem 0;
+  }
+
+  .slider-container span {
+    font-weight: bold;
+    color: #1f56c4;
+  }
+  .slider-container .location {
+    font-size: 1.3rem;
+    padding-top: 0.5rem;
+  }
+}
